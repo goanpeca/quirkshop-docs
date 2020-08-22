@@ -1,0 +1,3 @@
+[submodule "quirkshop-css"]
+	path = quirkshop-css
+	url = https://github.com/Quansight/quirkshop-css
