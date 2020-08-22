@@ -5,6 +5,5 @@ sphinxcontrib-bibtex
 sphinxcontrib-svg2pdfconverter
 sphinx-copybutton
 sphinx-autoapi
-myst_parser
 pydata-sphinx-theme
 myst-parser 
