@@ -21,7 +21,7 @@ html_theme = "pydata_sphinx_theme"
 master_doc = "index"
 source_suffix = ".md .rst .ipynb .py".split()
 extensions = (
-    "myst_parser nbsphinx sphinx.ext.autodoc sphinx.ext.napoleon".split()
+    "myst_nb sphinx.ext.autodoc sphinx.ext.napoleon".split()
 )  # autoapi.extension
 exclude_patterns = ["_build", "*checkpoint*", "output", "outputs"]
 autoapi_type = "python"

@@ -1,9 +1,6 @@
 requests
 importnb
-nbsphinx
-sphinxcontrib-bibtex
-sphinxcontrib-svg2pdfconverter
-sphinx-copybutton
 sphinx-autoapi
 pydata-sphinx-theme
-myst-parser 
+myst-parser
+myst-nb
