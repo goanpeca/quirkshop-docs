@@ -2,5 +2,5 @@ requests
 importnb
 sphinx-autoapi
 pydata-sphinx-theme
-myst-parser
+myst-parser[sphinx]
 myst-nb
