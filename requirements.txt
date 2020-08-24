@@ -4,3 +4,4 @@ sphinx-autoapi
 pydata-sphinx-theme
 myst-parser[sphinx]
 myst-nb
+sphinx>3
