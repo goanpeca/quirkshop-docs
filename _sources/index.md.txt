@@ -7,6 +7,7 @@ Documentation is for the community so today we'll work together to take notes in
 * Github: https://github.com/Quansight/quirkshop-docs
 * Youtube: https://www.youtube.com/channel/UChdlbCpQ_Wep04V9o0sGLWQ
 * Jitsi: https://meet.jit.si/quansight-quirkshopdocs
+    * Dial-in: +1.512.647.1431 PIN: 2558 9397 79#
 * Readthedocs: https://writingdocssucks.readthedocs.io/en/latest/
 
 * Host: @ftarlaci
