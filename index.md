@@ -1,0 +1,134 @@
+# Writing docs sucks! Quirkshop
+
+This quirkshop is a panel that explores the value of community, content, and format for open source software.
+Documentation is for the community so today we'll work together to take notes in hackMD. These notes will become documentation for today's quirkshop on read the docs and github pages.
+
+
+* Github: https://github.com/Quansight/quirkshop-docs
+* Youtube: https://www.youtube.com/channel/UChdlbCpQ_Wep04V9o0sGLWQ
+* Jitsi: https://meet.jit.si/quansight-quirkshopdocs
+    * Dial-in: +1.512.647.1431 PIN: 2558 9397 79#
+* Readthedocs: https://writingdocssucks.readthedocs.io/en/latest/
+
+* Host: @ftarlaci
+* Guests:
+    * @asmeurer
+    * @melissawm
+    * @goanpeca
+    * @juanis2112
+
+## Concerns
+
+* Where can we show some tikz stuff? (What is tikz? latex tooling that melissa likes, she likes writing tex 🤷): It is ok, everyone has guilty pleasures :-) [This is TiKZ](https://texample.net/tikz/). See [this repo](https://github.com/melissawm/qooltikz) for some examples in Jupyter notebooks.
+* If anyone else wants to give a lightning talk? @tonyfast can bail or we can adjust the schedule
+* Last time we completely neglected the youtube channel. @tonyfast is going to moderate the chat during the event.
+* Making sure the audience feels comfortable working in the hackmd.
+
+## Agenda
+
+* Prelude: (:05)
+    * @fatma will leads us in and welcome the internet to the quirkshop
+    * remind folks of the [hackmd](https://hackmd.io/N1naMCFAQb-J0FmQroVlyw) for taking notes. writing documents together makes us better. we'll publish these after the meeting.
+        * There is a section to place your github name in which documentation team your on.
+* Introductions: 
+    * Name, Location, Role, Projects you work on.
+* Rants/Raves
+    * Get it out. Say something you've been wanting to say. Be you. Each participant will either rant or rave about any topic in particular, if it is somehow related to the topic at hand, much better but this is not necessary.
+    * Write the docs
+    * What project has your favorite docs?
+* Panel (:12)
+    * Quansight labs and docs
+        * Posts
+            * @juanis2112 [Writing docs is not just writing docs](https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/) 
+            * @melissawm [Documentation as a way to build community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/)  
+        * Themes
+            * Who writes the docs?
+                * Who should actually do it... and why?
+            * Finding new documentation contributors: ownership, credit and open source
+            * Documentation programs
+                * [Google season of docs](https://developers.google.com/season-of-docs/).
+                    * not google summer of code
+                    * Pros and cons :-) ?
+                    * Grants don't allow the use of money for maintenance and docs.
+                * [CZI EOSS](https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/)
+            * Content is king.
+                * In the absence of resources, what type should documentation content should be prioritized?
+* Pick your p☠ison: $T_EX$, M⬇, or RST?
+    * [reStructuredText vs. Markdown for technical documentation](https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/)
+* ⚡ talk:  Modern sphinx for docs and blogs. 
+
+    * @tonyfast One conf for your docs and blog.
+
+        * myst, jupyterbook, [Troff](https://www.troff.org/history.html) :-P _Who did this?_
+        * Deploying to readthedocs and github pages.
+    * @goanpeca :-) CI and Github Actions FTW!
+        * questions
+
+* outro
+    * [Exit survey](https://docs.google.com/forms/d/e/1FAIpQLSd58qaTWR7SqBnmiZD4gQGauFb-LK3g-g9bLXBqMme8csKpvA/viewform)
+
+## Collaborative notes
+
+> We encourage the audience to work together in taking notes about the highlights and important resources shared during the panel.  We appreciate everyone pitching in to make some nice docs together that we can be proud about when the presentation is over.
+
+### What project has your favorite docs?
+_Any notetakers, please add your faves too!_
+
+  * Matthias : You did not specify Python Only, so I'm going to say Rust, docs.rs, thy have a bynch of fancy stuff, like for example all example are guarantied to compile, or have a orange/red border if they are purposefully invalid. It's also out of the box, no configuration needed typically. They also rebuild docs for all the new crates uploaded.
+
+### [Documentation as a way to build community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/)
+
+https://opensourcesurvey.org/2017/
+
+### Pick your p☠ison: $T_EX$, M⬇, or RST?
+
+* [Patron saint of yakshaves](https://yakshav.es/the-patron-saint-of-yakshaves/)
+
+#### Choose a team below
+
+##### Team Markdown
+
+@tonyfast, @asmeurer,
+
+##### Team RST
+
+@dharhas, @juanis2112
+
+##### Team TEX
+
+@melissawm, 
+
+
+### [reStructuredText vs. Markdown for technical documentation](https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/)
+
+### Modern sphinx for docs and blogs.
+
+### Deploying to readthedocs and github pages.
+
+## Before the event
+
+* Launch binders
+* Restart machines
+* Which service do y'all want to use? Jitsi is the default.
+
+
+## Notes from the prior event
+
+* I think there should be reminders by the presenters about turning off mics to prevent echo.
+
+* Be mindful of what the viewers are seeing on shared screens ...It would be best if that clicking around and scrolling were done "off camera" and then only shared when the appropriate thing was on screen. 
+
+* I really liked this overlap of two seemingly disparate skills that combine in one application. 
+
+* _Links are good._ Appreciated the CSS gif and links to what's beyond the quirkshop's scope, such the CSS art, for people that are interested in reading further.
+
+* Sometimes it was confusing or cluttered when the presenter's sreen included their Jitsi screen over the demonstration. 
+
+* The current Binder link that automatically splits Binder and Jitsi for participants is great and should be continued.
+
+
+## During the event
+
+* Be yourself. We 🤍 you cause you're you.
+* Minimize videos number of webcam shared in jitsi.
+* Children and animals are welcome interruptions, social norms during covid are different.
