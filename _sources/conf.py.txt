@@ -53,7 +53,7 @@ html_theme_options = {
     # 'google_analytics_account': 'UA-XXXXX',
     # Specify a base_url used to generate sitemap.xml. If not
     # specified, then no sitemap will be built.
-    "base_url": "https://writingdocssucks.readthedocs.io/",
+    # "base_url": "https://writingdocssucks.readthedocs.io/",
     # Set the color and the accent color
     "color_primary": THEME_COLOR,
     "color_accent": "light-yellow",
@@ -75,7 +75,7 @@ html_sidebars = {
 }
 
 # Exclude build directory and Jupyter backup files:
-exclude_patterns = ["_build", "*checkpoint*", "site", "jupyter_execute"]
+exclude_patterns = ["_build", "readme.md", "*checkpoint*", "site", "jupyter_execute"]
 
 
 latex_documents = [
