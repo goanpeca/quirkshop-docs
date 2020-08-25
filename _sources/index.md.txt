@@ -19,9 +19,6 @@ Documentation is for the community so today we'll work together to take notes in
 
 ## Concerns
 
-* Where can we show some tikz stuff? (What is tikz? latex tooling that melissa likes, she likes writing tex 🤷): It is ok, everyone has guilty pleasures :-) [This is TiKZ](https://texample.net/tikz/). See [this repo](https://github.com/melissawm/qooltikz) for some examples in Jupyter notebooks.
-* If anyone else wants to give a lightning talk? @tonyfast can bail or we can adjust the schedule
-* Last time we completely neglected the youtube channel. @tonyfast is going to moderate the chat during the event.
 * Making sure the audience feels comfortable working in the hackmd.
 
 ## Agenda
@@ -29,21 +26,58 @@ Documentation is for the community so today we'll work together to take notes in
 * Prelude: (:05)
     * @fatma will leads us in and welcome the internet to the quirkshop
     * remind folks of the [hackmd](https://hackmd.io/N1naMCFAQb-J0FmQroVlyw) for taking notes. writing documents together makes us better. we'll publish these after the meeting.
-        * There is a section to place your github name in which documentation team your on.
+        * There is a section to place your github name in which documentation team your on (latex, md, rst).
 * Introductions: 
     * Name, Location, Role, Projects you work on.
 * Rants/Raves
-    * Get it out. Say something you've been wanting to say. Be you. Each participant will either rant or rave about any topic in particular, if it is somehow related to the topic at hand, much better but this is not necessary.
-    * Write the docs
     * What project has your favorite docs?
+    * [Write the docs](https://www.writethedocs.org/)
+    * Any docs with good visual aids
+    * [Python docs](https://docs.python.org/3/)
+    * [Mozilla Javascript Docs](https://developer.mozilla.org/en-US/)
+    * Docs for visualization tools with good gallery views (like [matplotlib](https://matplotlib.org/3.2.0/gallery/index.html))
+    * [Django docs](https://docs.djangoproject.com/en/3.1/)
+    * [Django girls](https://tutorial.djangogirls.org/en/)
+    * [pymotw](https://pymotw.com/)
 * Panel (:12)
     * Quansight labs and docs
         * Posts
             * @juanis2112 [Writing docs is not just writing docs](https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/) 
-            * @melissawm [Documentation as a way to build community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/)  
+                * What's the goal of your docs? What are you trying to help with?
+                * how can you be empathetic with the user?
+            * @melissawm [Documentation as a way to build community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/)
+                * documentation is like writing educational content. 
+                * documentation is critical to adoption.
+                * good place to do high impact work.
+                * how to's, tutorials, explanations, api reference.  
+                * This blog post has a focus on the process Melissa experienced while working on NumPy docs
         * Themes
             * Who writes the docs?
+                * User and developer writers developing docs. They have the best understanding of what other people likely need to do and have questions on.
+                * Risk of missing things that new users or people with less experience if it is written by a developer who has a lot of experience. It is easy to make the wrong assumption about how much someone reading the docs already knows.
+                * At the same time, maybe developers have a responsibility to write docs because they might be the only people who can share their high-level understanding and help others gain that knowledge.
                 * Who should actually do it... and why?
+                * Underdocumented projects have a bad look. How do developers relate to users across a literacy gap.
+                * Train developers to write documentation.
+                * How does project size influence docs?
+                    * Amount of developers
+                    * type of project.
+                    * not all project are born equal.
+                    * fast vs slow documentation.
+                        * fast projects are unstable
+                        * slow projects are stable
+                    * Whether or not there is a set process for writing the docs. Bigger projects might have protocols where smaller don't. Both options can be an obstacle.
+                * @asmeurer experts struggle to write introductory documentation.
+                * Why is documentation considered a "first good issue?"
+                    * We were just talking about needing a strong understanding of the project, but do people new to the community know that yet?
+                    * Can be good for catching areas that are topical to new users and easily overlooked by long term development.
+                    * Size & scale
+                        * Who still knows all of numpy?
+                        * Folks focus on subject areas.
+                        * Reviewers that understand
+                        * Biweekly meetings of 8 or 9 people.
+                        * Create issues requesting content.It's helpful to create priorities for the people currently w
+                    * Idea that because you aren't writing code it is technically easier, but that can be misleading. Bad docs create problems long term.
             * Finding new documentation contributors: ownership, credit and open source
             * Documentation programs
                 * [Google season of docs](https://developers.google.com/season-of-docs/).
@@ -132,3 +166,4 @@ https://opensourcesurvey.org/2017/
 * Be yourself. We 🤍 you cause you're you.
 * Minimize videos number of webcam shared in jitsi.
 * Children and animals are welcome interruptions, social norms during covid are different.
+
