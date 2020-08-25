@@ -84,5 +84,3 @@ latex_documents = [
 ]
 
 jupyter_execute_notebooks = "off"
-
-html_static_path = ['_static', '_static/.htaccess']
