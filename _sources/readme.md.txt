@@ -1,0 +1,1 @@
+# [Writing docs sucks!](https://hackmd.io/@cwe0e-hUS3ij-pw4LtxplA/rkczC9FMP)

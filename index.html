@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing docs sucks! Quirkshop &#8212; Writing docs sucks!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#concerns" class="nav-link">Concerns</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#agenda" class="nav-link">Agenda</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#collaborative-notes" class="nav-link">Collaborative notes</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#what-project-has-your-favorite-docs" class="nav-link">What project has your favorite docs?</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#documentation-as-a-way-to-build-community" class="nav-link">Documentation as a way to build community</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#pick-your-pison-t-ex-m-or-rst" class="nav-link">Pick your p☠ison: T_EX, M⬇, or RST?</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#choose-a-team-below" class="nav-link">Choose a team below</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h5">
+            <a href="#team-markdown" class="nav-link">Team Markdown</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h5">
+            <a href="#team-rst" class="nav-link">Team RST</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h5">
+            <a href="#team-tex" class="nav-link">Team TEX</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#restructuredtext-vs-markdown-for-technical-documentation" class="nav-link">reStructuredText vs. Markdown for technical documentation</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#modern-sphinx-for-docs-and-blogs" class="nav-link">Modern sphinx for docs and blogs.</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#deploying-to-readthedocs-and-github-pages" class="nav-link">Deploying to readthedocs and github pages.</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#before-the-event" class="nav-link">Before the event</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#notes-from-the-prior-event" class="nav-link">Notes from the prior event</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#during-the-event" class="nav-link">During the event</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="writing-docs-sucks-quirkshop">
+<h1>Writing docs sucks! Quirkshop<a class="headerlink" href="#writing-docs-sucks-quirkshop" title="Permalink to this headline">¶</a></h1>
+<p>This quirkshop is a panel that explores the value of community, content, and format for open source software.
+Documentation is for the community so today we’ll work together to take notes in hackMD. These notes will become documentation for today’s quirkshop on read the docs and github pages.</p>
+<ul class="simple">
+<li><p>Github: https://github.com/Quansight/quirkshop-docs</p></li>
+<li><p>Youtube: https://www.youtube.com/channel/UChdlbCpQ_Wep04V9o0sGLWQ</p></li>
+<li><p>Jitsi: https://meet.jit.si/quansight-quirkshopdocs</p></li>
+<li><p>Readthedocs: https://writingdocssucks.readthedocs.io/en/latest/</p></li>
+<li><p>Host: &#64;ftarlaci</p></li>
+<li><p>Guests:</p>
+<ul>
+<li><p>&#64;asmeurer</p></li>
+<li><p>&#64;melissawm</p></li>
+<li><p>&#64;goanpeca</p></li>
+<li><p>&#64;juanis2112</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="concerns">
+<h2>Concerns<a class="headerlink" href="#concerns" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Where can we show some tikz stuff? (What is tikz? latex tooling that melissa likes, she likes writing tex 🤷): It is ok, everyone has guilty pleasures :-) <a class="reference external" href="https://texample.net/tikz/">This is TiKZ</a>. See <a class="reference external" href="https://github.com/melissawm/qooltikz">this repo</a> for some examples in Jupyter notebooks.</p></li>
+<li><p>If anyone else wants to give a lightning talk? &#64;tonyfast can bail or we can adjust the schedule</p></li>
+<li><p>Last time we completely neglected the youtube channel. &#64;tonyfast is going to moderate the chat during the event.</p></li>
+<li><p>Making sure the audience feels comfortable working in the hackmd.</p></li>
+</ul>
+</div>
+<div class="section" id="agenda">
+<h2>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Prelude: (:05)</p>
+<ul>
+<li><p>&#64;fatma will leads us in and welcome the internet to the quirkshop</p></li>
+<li><p>remind folks of the <a class="reference external" href="https://hackmd.io/N1naMCFAQb-J0FmQroVlyw">hackmd</a> for taking notes. writing documents together makes us better. we’ll publish these after the meeting.</p>
+<ul>
+<li><p>There is a section to place your github name in which documentation team your on.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Introductions:</p>
+<ul>
+<li><p>Name, Location, Role, Projects you work on.</p></li>
+</ul>
+</li>
+<li><p>Rants/Raves</p>
+<ul>
+<li><p>Get it out. Say something you’ve been wanting to say. Be you. Each participant will either rant or rave about any topic in particular, if it is somehow related to the topic at hand, much better but this is not necessary.</p></li>
+<li><p>Write the docs</p></li>
+<li><p>What project has your favorite docs?</p></li>
+</ul>
+</li>
+<li><p>Panel (:12)</p>
+<ul>
+<li><p>Quansight labs and docs</p>
+<ul>
+<li><p>Posts</p>
+<ul>
+<li><p>&#64;juanis2112 <a class="reference external" href="https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/">Writing docs is not just writing docs</a></p></li>
+<li><p>&#64;melissawm <a class="reference external" href="https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/">Documentation as a way to build community</a></p></li>
+</ul>
+</li>
+<li><p>Themes</p>
+<ul>
+<li><p>Who writes the docs?</p>
+<ul>
+<li><p>Who should actually do it… and why?</p></li>
+</ul>
+</li>
+<li><p>Finding new documentation contributors: ownership, credit and open source</p></li>
+<li><p>Documentation programs</p>
+<ul>
+<li><p><a class="reference external" href="https://developers.google.com/season-of-docs/">Google season of docs</a>.</p>
+<ul>
+<li><p>not google summer of code</p></li>
+<li><p>Pros and cons :-) ?</p></li>
+<li><p>Grants don’t allow the use of money for maintenance and docs.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/">CZI EOSS</a></p></li>
+</ul>
+</li>
+<li><p>Content is king.</p>
+<ul>
+<li><p>In the absence of resources, what type should documentation content should be prioritized?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Pick your p☠ison: <span class="math notranslate nohighlight">\(T_EX\)</span>, M⬇, or RST?</p>
+<ul>
+<li><p><a class="reference external" href="https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/">reStructuredText vs. Markdown for technical documentation</a></p></li>
+</ul>
+</li>
+<li><p>⚡ talk:  Modern sphinx for docs and blogs.</p>
+<ul>
+<li><p>&#64;tonyfast One conf for your docs and blog.</p>
+<ul>
+<li><p>myst, jupyterbook, <a class="reference external" href="https://www.troff.org/history.html">Troff</a> :-P <em>Who did this?</em></p></li>
+<li><p>Deploying to readthedocs and github pages.</p></li>
+</ul>
+</li>
+<li><p>&#64;goanpeca :-) CI and Github Actions FTW!</p>
+<ul>
+<li><p>questions</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>outro</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSd58qaTWR7SqBnmiZD4gQGauFb-LK3g-g9bLXBqMme8csKpvA/viewform">Exit survey</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="collaborative-notes">
+<h2>Collaborative notes<a class="headerlink" href="#collaborative-notes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>We encourage the audience to work together in taking notes about the highlights and important resources shared during the panel.  We appreciate everyone pitching in to make some nice docs together that we can be proud about when the presentation is over.</p>
+</div></blockquote>
+<div class="section" id="what-project-has-your-favorite-docs">
+<h3>What project has your favorite docs?<a class="headerlink" href="#what-project-has-your-favorite-docs" title="Permalink to this headline">¶</a></h3>
+<p><em>Any notetakers, please add your faves too!</em></p>
+<ul class="simple">
+<li><p>Matthias : You did not specify Python Only, so I’m going to say Rust, docs.rs, thy have a bynch of fancy stuff, like for example all example are guarantied to compile, or have a orange/red border if they are purposefully invalid. It’s also out of the box, no configuration needed typically. They also rebuild docs for all the new crates uploaded.</p></li>
+</ul>
+</div>
+<div class="section" id="documentation-as-a-way-to-build-community">
+<h3><a class="reference external" href="https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/">Documentation as a way to build community</a><a class="headerlink" href="#documentation-as-a-way-to-build-community" title="Permalink to this headline">¶</a></h3>
+<p>https://opensourcesurvey.org/2017/</p>
+</div>
+<div class="section" id="pick-your-pison-t-ex-m-or-rst">
+<h3>Pick your p☠ison: <span class="math notranslate nohighlight">\(T_EX\)</span>, M⬇, or RST?<a class="headerlink" href="#pick-your-pison-t-ex-m-or-rst" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://yakshav.es/the-patron-saint-of-yakshaves/">Patron saint of yakshaves</a></p></li>
+</ul>
+<div class="section" id="choose-a-team-below">
+<h4>Choose a team below<a class="headerlink" href="#choose-a-team-below" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="team-markdown">
+<h5>Team Markdown<a class="headerlink" href="#team-markdown" title="Permalink to this headline">¶</a></h5>
+<p>&#64;tonyfast, &#64;asmeurer,</p>
+</div>
+<div class="section" id="team-rst">
+<h5>Team RST<a class="headerlink" href="#team-rst" title="Permalink to this headline">¶</a></h5>
+<p>&#64;dharhas, &#64;juanis2112</p>
+</div>
+<div class="section" id="team-tex">
+<h5>Team TEX<a class="headerlink" href="#team-tex" title="Permalink to this headline">¶</a></h5>
+<p>&#64;melissawm,</p>
+</div>
+</div>
+</div>
+<div class="section" id="restructuredtext-vs-markdown-for-technical-documentation">
+<h3><a class="reference external" href="https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-documentation/">reStructuredText vs. Markdown for technical documentation</a><a class="headerlink" href="#restructuredtext-vs-markdown-for-technical-documentation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="modern-sphinx-for-docs-and-blogs">
+<h3>Modern sphinx for docs and blogs.<a class="headerlink" href="#modern-sphinx-for-docs-and-blogs" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="deploying-to-readthedocs-and-github-pages">
+<h3>Deploying to readthedocs and github pages.<a class="headerlink" href="#deploying-to-readthedocs-and-github-pages" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="before-the-event">
+<h2>Before the event<a class="headerlink" href="#before-the-event" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Launch binders</p></li>
+<li><p>Restart machines</p></li>
+<li><p>Which service do y’all want to use? Jitsi is the default.</p></li>
+</ul>
+</div>
+<div class="section" id="notes-from-the-prior-event">
+<h2>Notes from the prior event<a class="headerlink" href="#notes-from-the-prior-event" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>I think there should be reminders by the presenters about turning off mics to prevent echo.</p></li>
+<li><p>Be mindful of what the viewers are seeing on shared screens …It would be best if that clicking around and scrolling were done “off camera” and then only shared when the appropriate thing was on screen.</p></li>
+<li><p>I really liked this overlap of two seemingly disparate skills that combine in one application.</p></li>
+<li><p><em>Links are good.</em> Appreciated the CSS gif and links to what’s beyond the quirkshop’s scope, such the CSS art, for people that are interested in reading further.</p></li>
+<li><p>Sometimes it was confusing or cluttered when the presenter’s sreen included their Jitsi screen over the demonstration.</p></li>
+<li><p>The current Binder link that automatically splits Binder and Jitsi for participants is great and should be continued.</p></li>
+</ul>
+</div>
+<div class="section" id="during-the-event">
+<h2>During the event<a class="headerlink" href="#during-the-event" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Be yourself. We 🤍 you cause you’re you.</p></li>
+<li><p>Minimize videos number of webcam shared in jitsi.</p></li>
+<li><p>Children and animals are welcome interruptions, social norms during covid are different.</p></li>
+</ul>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright .<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

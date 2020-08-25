@@ -1,0 +1,220 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; Writing docs sucks!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <p>import pathlib
+import requests
+id = “N1naMCFAQb-J0FmQroVlyw”</p>
+<p>revisions = F”<a class="reference external" href="https://hackmd.io">https://hackmd.io</a>/{id}/revision”</p>
+<p>response = requests.get(revisions)</p>
+<dl class="simple">
+<dt>entry = requests.get(</dt><dd><p>F”{response.url}/{response.json()[‘revision’][0][‘time’]}”)</p>
+</dd>
+<dt>pathlib.Path(‘index.md’).write_text(</dt><dd><p>entry.json()[‘content’]</p>
+</dd>
+</dl>
+<p>)</p>
+<p>BLOG_TITLE = title = html_title = “Writing docs sucks!”
+BLOG_AUTHOR = author = “Quansight”
+html_theme = “pydata_sphinx_theme”
+master_doc = “index”
+source_suffix = “.md .rst .ipynb .py”.split()
+extensions = (</p>
+<blockquote>
+<div><p>“myst_nb sphinx.ext.autodoc sphinx.ext.napoleon”.split()</p>
+</div></blockquote>
+<p>)  # autoapi.extension
+exclude_patterns = [“_build”, “<em>checkpoint</em>”, “output”, “outputs”]
+autoapi_type = “python”
+autoapi_dirs = []
+THEME = “material-theme”
+DEFAULT_LANG = “en”</p>
+<dl class="simple">
+<dt>NAVIGATION_LINKS = {</dt><dd><p>DEFAULT_LANG: tuple(),</p>
+</dd>
+</dl>
+<p>}</p>
+<p>THEME_COLOR = “#7B699F”</p>
+<dl class="simple">
+<dt>POSTS = (</dt><dd><p>(“posts/<em>.md”, “posts”, “post.tmpl”),
+(“posts/</em>.rst”, “posts”, “post.tmpl”),
+(“posts/<em>.txt”, “posts”, “post.tmpl”),
+(“posts/</em>.html”, “posts”, “post.tmpl”),
+(“posts/<em>.ipynb”, “posts”, “post.tmpl”),
+(“posts/</em>.md.ipynb”, “posts”, “post.tmpl”),</p>
+</dd>
+</dl>
+<p>)</p>
+<p># Material theme options (see theme.conf for more information)
+html_theme_options = {</p>
+<blockquote>
+<div><p># Set the name of the project to appear in the navigation.
+“nav_title”: “Writing docs sucks!”,
+# Set you GA account ID to enable tracking
+# ‘google_analytics_account’: ‘UA-XXXXX’,
+# Specify a base_url used to generate sitemap.xml. If not
+# specified, then no sitemap will be built.
+“base_url”: “<a class="reference external" href="https://writingdocssucks.readthedocs.io/">https://writingdocssucks.readthedocs.io/</a>”,
+# Set the color and the accent color
+“color_primary”: THEME_COLOR,
+“color_accent”: “light-yellow”,
+# Set the repo location to get a badge with stats
+“repo_url”: “<a class="reference external" href="https://github.com/Quansight/quirkshop-docs">https://github.com/Quansight/quirkshop-docs</a>”,
+“repo_name”: “Writing docs sucks!”,
+# Visible levels of the global TOC; -1 means unlimited
+“globaltoc_depth”: 1,
+# If False, expand all TOC entries
+“globaltoc_collapse”: True,
+# If True, show hidden TOC entries
+“globaltoc_includehidden”: False,
+“nav_links”: [</p>
+<blockquote>
+<div><p>{“href”: “index”, “title”: “Writing docs sucks!”, “internal”: True, },</p>
+</div></blockquote>
+<p>],</p>
+</div></blockquote>
+<p>}
+html_sidebars = {</p>
+<blockquote>
+<div><p>“**”: [“logo-text.html”, “globaltoc.html”, “localtoc.html”, “searchbox.html”]</p>
+</div></blockquote>
+<p>}</p>
+<p># Exclude build directory and Jupyter backup files:
+exclude_patterns = [“_build”, “<em>checkpoint</em>”, “site”, “jupyter_execute”]</p>
+<dl class="simple">
+<dt>latex_documents = [</dt><dd><dl class="simple">
+<dt>(master_doc, “quirkshop-docs.tex”,</dt><dd><p>“Quirkshop about docs”, “quirkshop-docs”, “manual”,)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>]</p>
+<p>jupyter_execute_notebooks = “off”</p>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright .<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
